@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <Version>2.4.0</Version>
+    <Company>Deloitte</Company>
+    <Authors>Deloitte</Authors>
+    <Product>Discovery Integrator</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+</Project>

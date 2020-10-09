@@ -1,0 +1,63 @@
+{
+  "name": "communicator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/system": "^4.9.14",
+    "axios": "^0.19.2",
+    "clsx": "^1.1.1",
+    "date-fns": "^2.16.1",
+    "env-cmd": "^10.1.0",
+    "npm": "^6.14.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3"
+  },
+  "scripts": {
+    "start": "env-cmd -e development react-scripts start",
+    "build:development": "env-cmd -e development npm run build",
+    "build:staging": "env-cmd -e staging npm run build",
+    "build:production": "env-cmd -e production npm run build",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --verbose --env=jsdom",
+    "snap": "react-scripts test -u"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/*.js",
+      "src/components/**/*.js",
+      "src/pages/*.js",
+      "src/pages/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^24.9.0",
+    "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest": "^24.9.0"
+  }
+}

@@ -1,0 +1,54 @@
+***************
+** OBJECTIVE ** 
+***************
+We have a provided a working application that displays communication records in a table. The objective is to add additional code to display commnication detail records with the ability to create, update, and delete records.
+
+Zip and send all files to Julie Strong (justrong@deloitte.com), John Fuex (jfuex@deloitte.com), and Phillip Britain (pbritain@deloitte.com) prior to the interview. If you have questions along the way please don't hesistate to email Julie, John, and Phillip.
+
+************************
+** SETUP INSTRUCTIONS ** 
+************************
+
+- Download and install Visual Studio Code: https://code.visualstudio.com/
+- Download and install Visual Studio 2019 Community Edition: https://visualstudio.microsoft.com/vs/community/
+(This will also install the latest version of the .NET Core SDK)
+- Download and install Node.js and npm: https://www.npmjs.com/get-npm 
+- Open the the \Interview\Client folder in VS Code and run "npm i" in the terminal to install all of the packages will take several minutes)
+- Open the Communicator.sln file found in \Interview\Server in Visual Studio 2019 Community Edition
+- Confirm application runs 
+	- In Visual Studio 2019 Community Edition, build the Communicator.sln solution
+	- Set the startup project to the Core.API project and run using IIS Express
+	- In VS Code, run the front end app using "npm start" in the terminal to see the existing application which displays communication records in a table (may take a few minutes to start the development server)
+
+
+*************************
+** CODING INSTRUCTIONS ** 
+*************************
+
+	[BACKEND]
+
+	1) Finish the controller methods in \Interview\Server\Core.API\Controllers\CommunicationsController.cs
+		- See "TO DO" comments
+	
+	2) Finish the service methods in \Interview\Server\Core.Application\CoreService.cs
+		- See "TO DO" comments
+	
+	Bonus: Build at least one xunit test in \Interview\Server\Tests\CommunicationTests.cs
+
+	[FRONT END]
+
+	1) Follow "TO DO" comments in \Interview\Client\src\communications\detail.js to:
+		- Fetch communication detail data
+		- Show From, To, Subject, and Message fields. Allow for Create, Update, and Delete.
+
+	2) Follow "TO DO" comments in \Interview\Client\src\communications\index.js to:
+		- Make individual communication table rows clickable so you can drill down into the details
+
+
+****************
+** OTHER INFO ** 
+****************
+
+\Server\Core.API\communicator.db is a SQLLite database file that contains a few example records
+
+
