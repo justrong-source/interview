@@ -14,8 +14,8 @@ function Switch() {
 
   return (
       <RRSwitch location={location}>
-        <Route path="/" component={Communications} />
-        <Route  path="/:id" component={CommunicationDetail} />
+        <Route exact path="/" component={Communications} />
+        <Route exact path="/:id" component={CommunicationDetail} />
       </RRSwitch>
   );
 }
